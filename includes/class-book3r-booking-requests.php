@@ -7,64 +7,20 @@ class Book3r_Booking_Requests {
     }
 
     public function display_booking_requests_page() {
-		global $wpdb;
-		$bookings = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}book3r_bookings ORDER BY created_at DESC");
-		?>
-		<div class="wrap">
-			<h1>Buchungsanfragen</h1>
-			<table class="wp-list-table widefat fixed striped">
-				<thead>
-					<tr>
-						<th class="sortable">Anreise</th>
-						<th class="sortable">Abreise</th>
-						<th class="sortable">Bevorz. Wohnung</th>
-						<th class="sortable">Anzahl Gäste</th>
-						<th class="sortable">davon unter 6</th>
-						<th class="sortable">Vorname</th>
-						<th class="sortable">Nachname</th>
-						<th class="sortable">Email</th>
-						<th class="sortable">Telefon</th>
-						<th class="sortable">Adresse</th>
-						<th class="sortable">PLZ</th>
-						<th class="sortable">Ort</th>
-						<th class="sortable">Land</th>
-						<!-- <th class="sortable">Nachricht</th> -->
-						<th class="sortable">Status</th>
-						<th class="sortable">Erstellt am</th>
-						<th><?php _e('Actions', 'book3r'); ?></th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php foreach ($bookings as $booking): ?>
-					<tr>
-						<td><?php echo esc_html($booking->arrival_date); ?></td>
-						<td><?php echo esc_html($booking->departure_date); ?></td>
-						<td><?php echo esc_html($booking->preferred_room); ?></td>
-						<td><?php echo esc_html($booking->num_guests); ?></td>
-						<td><?php echo esc_html($booking->children_under_6); ?></td>
-						<td><?php echo esc_html($booking->first_name); ?></td>
-						<td><?php echo esc_html($booking->last_name); ?></td>
-						<td><?php echo esc_html($booking->email); ?></td>
-						<td><?php echo esc_html($booking->phone); ?></td>
-						<td><?php echo esc_html($booking->address); ?></td>
-						<td><?php echo esc_html($booking->postal_code); ?></td>
-						<td><?php echo esc_html($booking->city); ?></td>
-						<td><?php echo esc_html($booking->country); ?></td>
-						<!-- <td><?php echo esc_html($booking->message); ?></td> -->
-						<td><?php echo esc_html($booking->status); ?></td>
-						<td><?php echo esc_html($booking->created_at); ?></td>
-						<td>
-							<a href="<?php echo admin_url('admin.php?page=book3r-edit-booking&id=' . $booking->id); ?>"><?php _e('Edit', 'book3r'); ?></a>
-						</td>
-					</tr>
-					<?php endforeach; ?>
-				</tbody>
-			</table>
-		</div>
-		<?php
-	}
-	
-
+        $booking_requests_list_table = new Book3r_Booking_Requests_List_Table();
+        $booking_requests_list_table->prepare_items();
+        ?>
+        <div class="wrap">
+            <h1 class="wp-heading-inline"><?php _e('Booking Requests', 'book3r'); ?></h1>
+            <form method="post">
+                <?php
+                $booking_requests_list_table->display();
+                ?>
+            </form>
+        </div>
+        <?php
+    }
+    
     public function display_edit_booking_page() {
         global $wpdb;
 

@@ -65,6 +65,8 @@ function activate_book3r() {
 // Include the main class file
 require_once plugin_dir_path(__FILE__) . 'includes/class-book3r.php';
 require_once plugin_dir_path(__FILE__) . 'includes/class-book3r-booking-form.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-book3r-customers-list-table.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-book3r-booking-requests-list-table.php';
 
 function run_book3r() {
     $plugin = new Book3r();
