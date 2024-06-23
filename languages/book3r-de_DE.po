@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+msgid "Arrival Date"
+msgstr "Anreise"
+
+msgid "Departure Date"
+msgstr "Abreise"
+
+msgid "Preferred Room"
+msgstr "bevorz. Wohnung"
+
+msgid "Number of Guests"
+msgstr "Personen"
+
+msgid "Children Under 6 Years"
+msgstr "davon Kinder unter 6"
+
+msgid "First Name"
+msgstr "Vorname"
+
+msgid "Last Name"
+msgstr "Nachname"
+
+msgid "Email Address"
+msgstr "Email"
+
+msgid "Phone Number"
+msgstr "Telefon"
+
+msgid "Address"
+msgstr "Anschrift"
+
+msgid "Postal Code"
+msgstr "PLZ"
+
+msgid "City"
+msgstr "Ort"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Message"
+msgstr "Möchten Sie noch etwas loswerden?"
+
+msgid "Submit"
+msgstr "Anfrage abschicken"
+
+msgid "Your booking request has been submitted."
+msgstr "Ihre Buchungsanfrage wurde eingereicht."
+
+msgid "Thank You for Your Booking Request"
+msgstr "Vielen Dank für Ihre Buchungsanfrage"
+
+msgid ""
+"Thank you for your booking request. Here are the details:\n"
+"\n"
+msgstr ""
+"Vielen Dank für Ihre Buchungsanfrage. Hier sind die Details:\n"
+"\n"
+
+msgid "New Booking Request"
+msgstr "Neue Buchungsanfrage"
+
+msgid ""
+"A new booking request has been submitted.\n"
+"\n"
+msgstr ""
+"Eine neue Buchungsanfrage wurde eingereicht.\n"
+"\n"
+
+msgid "Book3r Dashboard"
+msgstr "Book3r-Dashboard"
+
+msgid "Book3r"
+msgstr "Book3r"
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Welcome to the Book3r plugin dashboard. Here you will find information about your bookings, customers, and other modules."
+msgstr "Willkommen im Book3r-Plugin-Dashboard. Hier finden Sie Informationen zu Ihren Buchungen, Kunden und anderen Modulen."
